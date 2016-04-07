@@ -331,53 +331,47 @@ body {
 <body>
 
 
-	<sp:form id="login" method="post" action="apartment/userProfile" commandName="profile" > 
+	<sp:form id="login" method="post" action="apartment/register" commandName="profile"> 
 	   <img src="img/pic2.jpg"/> Registration Page
 	  <br />
 		<span style="color: blue; font-size: 14px;">${requestScope.ApplicationMessage}</span>
 
 		<div>
-			<label for="login_username">*First Name:</label> <input type="text"
-				name="firstName" id="firstName" class="field required"
-				title="Please provide your first Name" />
+			<label for="login_username">*First Name:</label> 
+			<input type="text" name="firstName" id="firstName" class="field required" title="Please provide your first Name" />
 		</div>
 
 
 
 		<div>
-			<label for="login_username">*Last Name:</label> <input type="text"
-				name="lastName" id="lastName" class="field required"
-				title="Please provide your last name" />
+			<label for="login_username">*Last Name:</label> 
+			<input type="text" name="lastName" id="lastName" class="field required"	title="Please provide your last name" />
 		</div>
 
 
 		<div>
-			<label for="login_username">*Username:</label> <input type="text"
-				name="username" id="username" class="field required"
-				title="Please provide your username" />
+			<label for="login_username">*Username:</label> 
+			<input type="text" name="username" id="username" class="field required" title="Please provide your username" />
 		</div>
 		<div>
-			<label for="login_password">*Password:</label> <input type="password"
-				name="password" id="login_password" class="field required"
-				title="Password is required" />
+			<label for="login_password">*Password:</label> 
+			<input type="password" name="password" id="login_password" class="field required" title="Password is required" />
 		</div>
 
 		<div>
-			<label for="login_username">*Email Address:</label> <input
-				type="text" name="email" id="email" class="field required"
-				title="Please provide your email" />
+			<label for="login_username">*Email Address:</label> 
+			<input type="text" name="email" id="email" class="field required" title="Please provide your email" />
 		</div>
 
 		<div>
-			<label for="login_username">*Birthday:</label> <input type="date"
-				name="birthday" id="birthday" class="field required"
-				title="Please provide your birthday" />
+			<label for="login_username">*Birthday:</label> 
+			<input type="date" name="birthday" id="birthday" class="field required" title="Please provide your birthday" />
 		</div>
 
 		<div>
-			<label for="login_username">*Role:</label> <span
-				style="margin-left: -20px;"> <select name="role"
-				class="field required">
+			<label for="login_username">*Role:</label> 
+			<span style="margin-left: -20px;">
+			<select name="role" class="field required">
 					<option>Seller</option>
 					<option>Buyer</option>
 			</select>
@@ -388,7 +382,6 @@ body {
 			<button type="submit">Register</button>
 
 		</div>
-
 
 	</sp:form>
 

@@ -362,7 +362,7 @@ body {
 		<div class="submit">
 			<button type="submit">Log in</button>
 
-			<label> </label> <a href="${pageContext.request.contextPath}/apartment/userProfile"><img
+			<label> </label> <a href="${pageContext.request.contextPath}/apartment/register"><img
 				src="${pageContext.request.contextPath}/img/new.gif"
 				style="margin-top: 10px" /><img
 				src="${pageContext.request.contextPath}/img/profile.png"

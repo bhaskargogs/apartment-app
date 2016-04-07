@@ -69,7 +69,7 @@ public class ProfileController {
 		return "users";
 	}
 	
-	@RequestMapping(value="userProfile",method=RequestMethod.GET)
+	@RequestMapping(value="register",method=RequestMethod.GET)
 	public String userProfilePage(Model model) {
 		//creating blank object of user profile
 		UserEntity profile=new UserEntity();
@@ -77,7 +77,7 @@ public class ProfileController {
 		return "register";
 	}
 	
-	@RequestMapping(value="userProfile",method=RequestMethod.POST)
+	@RequestMapping(value="register",method=RequestMethod.POST)
 	public String userProfileSubmit(@ModelAttribute("profile") User profile,Model model) {
 		//creating blank object of user profile
 		System.out.println(profile);

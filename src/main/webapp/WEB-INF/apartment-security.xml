@@ -12,7 +12,7 @@
  	<security:http auto-config="true" use-expressions="true" access-denied-page="/apartment/denied" >
 		<security:intercept-url pattern="/apartment/auth" access="permitAll"/>
 		<security:intercept-url pattern="/apartment/invalidLogin" access="permitAll"/>
-		<security:intercept-url pattern="/apartment/userProfile" access="permitAll"/>
+		<security:intercept-url pattern="/apartment/register" access="isAnonymous()"/>
 		<security:intercept-url pattern="/apartment/kill" access="hasRole('Seller')"/>
 		<!-- <security:intercept-url pattern="/bank/**" access="hasRole('customer')"/> -->
 		 <security:intercept-url pattern="/apartment/**" access="hasAnyRole('Buyer','Seller')"/> 

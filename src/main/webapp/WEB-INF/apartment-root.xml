@@ -12,6 +12,7 @@
 	   			http://www.springframework.org/schema/mvc 
 			http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 
+	<import resource="cxf-soap.xml"/>
 	<import resource="apartment-dao.xml" />
 	<import resource="apartment-service.xml" />
 	<import resource="apartment-ds.xml" />
